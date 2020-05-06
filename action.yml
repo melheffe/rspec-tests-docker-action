@@ -1,0 +1,12 @@
+name: 'rspec-tests'
+description: 'Run rspec tests inside Docker container'
+inputs:
+  tests-to-run:
+    description: 'What tests to run'
+    required: false
+    default: './spec'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.tests-to-run }}
