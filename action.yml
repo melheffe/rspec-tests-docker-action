@@ -10,3 +10,6 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.tests-to-run }}
+branding:
+  icon: 'git-merge'
+  color: 'blue'    
